@@ -1,0 +1,46 @@
+# ------------------------------------------------------------------------------
+# DuckDB & Database Files
+# ------------------------------------------------------------------------------
+# DuckDB database files and temporary lock/journal files
+*.duckdb
+*.duckdb.tmp
+*.duckdb.wal
+*.db
+
+# ------------------------------------------------------------------------------
+# Raw, Intermediate, and Output Data
+# ------------------------------------------------------------------------------
+# Keep large/raw datasets out of git (e.g., CSVs, Parquet, JSON files)
+data/
+*.csv
+*.parquet
+*.json
+*.xlsx
+
+# Exclude specific directories if you structure pipeline steps
+data/raw/
+data/processed/
+data/output/
+
+# Ignore log files from pipeline runs
+*.log
+
+# ------------------------------------------------------------------------------
+# Secrets & Environment Variables
+# ------------------------------------------------------------------------------
+# Database credentials, API keys, or cloud storage keys (e.g., AWS S3 keys for DuckDB)
+.env
+.env.local
+secrets.json
+*.pem
+
+# ------------------------------------------------------------------------------
+# Python & Virtual Environments
+# ------------------------------------------------------------------------------
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.pytest_cache/
+
