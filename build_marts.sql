@@ -5,3 +5,7 @@
 .read 03_create_flat_mart.sql
 
 .read 04_create_skills_mart.sql
+
+.read 05_create_priority_mart.sql
+
+.read 06_update_priority_mart.sql
